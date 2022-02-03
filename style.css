@@ -10,7 +10,7 @@
     --text-dark: #1a3260;
     --text-black2: #1A3760D4;
     --text-red: #ff4d6d;
-    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 /10%);
+    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
     --bg-blue: rgb(249, 243, 255);
     --bg-red: rgb(254, 247, 252);
     --bg-yellow:rgb(255, 255, 246);
@@ -222,7 +222,7 @@ ul {
     font-weight: bold;
 }
 
-.btn-shodow {
+.btn-shadow {
     box-shadow: var(--box-shadow);
 }
 
@@ -258,3 +258,5 @@ ul {
 .w-50 {
     width: 50%;
 }
+
+/* ---------Navigation -------- */
