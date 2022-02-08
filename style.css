@@ -260,11 +260,16 @@ ul {
 }
 
 /* --------- Media Query -------- */
+@media (min-width: 576px) {
+    .container {
+        max-width: 576px;
+      }
+}
 
 /* for large screen sm (640px) */
 @media (min-width: 640px) {
   .container {
-    max-height: 640px;
+    max-width: 640px;
   }
   .sm-text-xl {
     font-size: 3em;
@@ -274,14 +279,14 @@ ul {
 /* for large screen md (768px) */
 @media (min-width: 768px) {
   .container {
-    max-height: 768px;
+    max-width: 768px;
   }
 }
 
 /* for large screen lg (1024px) */
 @media (min-width: 1024px) {
   .container {
-    max-height: 1024px;
+    max-width: 1024px;
   }
 
   #nav .toggle-btn > button {
@@ -303,12 +308,16 @@ ul {
   .active {
     max-height: 100% !important;
   }
+
+  .lg-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* for large screen xl (1280px) */
 @media (min-width: 1280px) {
   .container {
-    max-height: 1280px;
+    max-width: 1280px;
   }
 
   #nav {
@@ -378,4 +387,9 @@ ul {
 #site-main .banner-area .banner-title{
     height: 95vh;
     padding-top: 16rem;
+}
+
+/* --------- Agency area style -------- */
+#site-main .agency-area{
+    padding: 5em 0;
 }
