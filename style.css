@@ -260,6 +260,12 @@ ul {
 }
 
 /* --------- Media Query -------- */
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+      }
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 576px;
@@ -486,9 +492,18 @@ ul {
 /* --------- Recent work area Style -------- */
 #site-main .recent-work-area .images-flex .flex-item {
     width: 360px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #site-main .recent-work-area .images-flex .flex-item img {
+    border-radius: 10px;
+}
+
+/* --------- Articles daily updated area Style -------- */
+#site-main .articles-area .grid {
+    column-gap: 2em;
+}
+
+#site-main .articles-area .card article {
     border-radius: 10px;
 }
