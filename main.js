@@ -18,3 +18,8 @@ window.onload = function digital_fn() {
         fitwidth: true,
     })
 }
+
+// rellax js
+var rellax = new Rellax('.rellax', {
+    center: true,
+});

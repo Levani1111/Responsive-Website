@@ -270,11 +270,25 @@ body {
     .container {
         max-width: 320px;
       }
+
+      #nav .collapse ul > li {
+        padding: 0 1.5rem;
+        line-height: 3rem;
+        font-size: 1.1em;
+        color: var(--text-light);
+      }
 }
 
 @media (min-width: 576px) {
     .container {
         max-width: 576px;
+      }
+
+      #nav .collapse ul > li {
+        padding: 0 1.5rem;
+        line-height: 3rem;
+        font-size: 1.1em;
+        color: var(--text-light);
       }
 }
 
@@ -292,6 +306,13 @@ body {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
 }
+
+#nav .collapse ul > li {
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+    color: var(--text-light);
+  }
 
 }
 
@@ -311,6 +332,13 @@ body {
 
   .lg-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #nav .collapse ul > li {
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+    color: var(--text-light);
   }
 
 }
@@ -354,6 +382,13 @@ body {
   .lg-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  #nav .collapse ul > li {
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+    color: var(--text-dark2);
+  }
 }
 
 /* for large screen xl (1280px) */
@@ -369,6 +404,7 @@ body {
   #nav .flex-initial ul button {
     display: inline-block !important;
   }
+
 }
 
 /* --------- Navigation Style -------- */
@@ -378,14 +414,15 @@ body {
   left: 0;
   width: 100%;
   padding: 1rem 1.5rem;
-  background: var(--text-light);
+  background: var(--bg-gradient);
   flex-direction: column;
+  z-index: 1;
 }
 
 #nav .collapse {
   max-height: 0px;
   overflow-y: hidden;
-  transition: all 0.9s ease;
+  transition: all 0.5s ease;
 }
 
 #nav .collapse ul {
@@ -406,7 +443,7 @@ body {
   right: 0;
   top: 0;
   padding: 1rem;
-  color: var(--text-dark2);
+  color: var(--text-light);
 }
 
 #nav .flex-initial ul button {
@@ -420,15 +457,19 @@ body {
 /* --------- Banner area  Style -------- */
 #site-main .banner-area{
     width: 100%;
-    position: relative;
-    background: var(--bg-cover) no-repeat;
-    background-position-x: right;
-    z-index: -99;
+    /* position: relative; */
+    /* padding-bottom: 50px; */
+    align-items: center;
+    /* background: var(--bg-cover) no-repeat; */
+    /* background-position-x: right; */
+    /* z-index: -99; */
 }
 
-#site-main .banner-area .banner-title{
+
+#site-main .banner-area .banner-title {
     height: 95vh;
-    padding-top: 16rem;
+    padding-top: 10rem;
+
 }
 
 /* --------- Agency area style -------- */
